@@ -1,0 +1,11 @@
+[
+  {
+    "file": "basic-spanish-to-polish.txt",
+    "category": "basic",
+    "description": "entry level vocabulary",
+    "level": "A1",
+    "language-in": "es",
+    "language-out": "pl",
+    "version": "1.0"
+  }
+]
