@@ -1,6 +1,7 @@
 [
   {
     "file": "basic-spanish-to-polish.txt",
+    "format": "ini",
     "category": "basic",
     "description": "entry level vocabulary",
     "level": "A1",
