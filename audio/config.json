@@ -1,0 +1,86 @@
+[
+    {
+        "text": "¿Cómo estás?",
+        "file": "C/Como_estas.mp3",
+        "language": "es",
+        "timestamp": "2025-11-09T14:30:00"
+    },
+    {
+        "text": "¿Cuánto es?",
+        "file": "C/Cuanto_es.mp3",
+        "language": "es",
+        "timestamp": "2025-11-09T14:30:00"
+    },
+    {
+        "text": "¿Dónde puedo comprar un billete de tren?",
+        "file": "D/Donde_puedo_comprar_un_billete_de_tren.mp3",
+        "language": "es",
+        "timestamp": "2025-11-09T14:30:00"
+    },
+    {
+        "text": "¿El desayuno está incluido?",
+        "file": "E/El_desayuno_esta_incluido.mp3",
+        "language": "es",
+        "timestamp": "2025-11-09T14:30:00"
+    },
+    {
+        "text": "Hazme un favor",
+        "file": "H/Hazme_un_favor.mp3",
+        "language": "es",
+        "timestamp": "2025-11-09T14:30:00"
+    },
+    {
+        "text": "Me gusta",
+        "file": "M/Me_gusta.mp3",
+        "language": "es",
+        "timestamp": "2025-11-09T14:30:00"
+    },
+    {
+        "text": "¿Me traes el menú, por favor?",
+        "file": "M/Me_traes_el_menu_por_favor.mp3",
+        "language": "es",
+        "timestamp": "2025-11-09T14:30:00"
+    },
+    {
+        "text": "Muchas gracias",
+        "file": "M/Muchas_gracias.mp3",
+        "language": "es",
+        "timestamp": "2025-11-09T14:30:00"
+    },
+    {
+        "text": "No hay problema",
+        "file": "N/No_hay_problema.mp3",
+        "language": "es",
+        "timestamp": "2025-11-09T14:30:00"
+    },
+    {
+        "text": "Oh, bien, ahora está todo claro",
+        "file": "O/Oh_bien_ahora_esta_todo_claro.mp3",
+        "language": "es",
+        "timestamp": "2025-11-09T14:30:00"
+    },
+    {
+        "text": "Por favor",
+        "file": "P/Por_favor.mp3",
+        "language": "es",
+        "timestamp": "2025-11-09T14:30:00"
+    },
+    {
+        "text": "¿Puedes repetir?",
+        "file": "P/Puedes_repetir.mp3",
+        "language": "es",
+        "timestamp": "2025-11-09T14:30:00"
+    },
+    {
+        "text": "Tranquilízate",
+        "file": "T/Tranquilizate.mp3",
+        "language": "es",
+        "timestamp": "2025-11-09T14:30:00"
+    },
+    {
+        "text": "Ven un momento",
+        "file": "V/Ven_un_momento.mp3",
+        "language": "es",
+        "timestamp": "2025-11-09T14:30:00"
+    }
+]
