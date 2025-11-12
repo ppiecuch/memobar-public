@@ -1,86 +1,1498 @@
-[
-    {
-        "text": "¿Cómo estás?",
-        "file": "C/Como_estas.mp3",
-        "language": "es",
-        "timestamp": "2025-11-09T14:30:00"
+{
+  "basic-spanish-to-polish.txt": {
+    "1_Buenos_dias": {
+      "foreign": "¡Buenos días!",
+      "translation": "Dzień dobry!",
+      "audio_filename": "Buenos_dias.mp3",
+      "language": "es"
     },
-    {
-        "text": "¿Cuánto es?",
-        "file": "C/Cuanto_es.mp3",
-        "language": "es",
-        "timestamp": "2025-11-09T14:30:00"
+    "2_Buenas_tardes": {
+      "foreign": "¡Buenas tardes!",
+      "translation": "Dzień dobry! (po południu)",
+      "audio_filename": "Buenas_tardes.mp3",
+      "language": "es"
     },
-    {
-        "text": "¿Dónde puedo comprar un billete de tren?",
-        "file": "D/Donde_puedo_comprar_un_billete_de_tren.mp3",
-        "language": "es",
-        "timestamp": "2025-11-09T14:30:00"
+    "3_Buenas_noches": {
+      "foreign": "¡Buenas noches!",
+      "translation": "Dobry wieczór!",
+      "audio_filename": "Buenas_noches.mp3",
+      "language": "es"
     },
-    {
-        "text": "¿El desayuno está incluido?",
-        "file": "E/El_desayuno_esta_incluido.mp3",
-        "language": "es",
-        "timestamp": "2025-11-09T14:30:00"
+    "4_Hola": {
+      "foreign": "¡Hola!",
+      "translation": "Cześć!",
+      "audio_filename": "Hola.mp3",
+      "language": "es"
     },
-    {
-        "text": "Hazme un favor",
-        "file": "H/Hazme_un_favor.mp3",
-        "language": "es",
-        "timestamp": "2025-11-09T14:30:00"
+    "5_Vivo_en": {
+      "foreign": "Vivo en…",
+      "translation": "Mieszkam w…",
+      "audio_filename": "Vivo_en.mp3",
+      "language": "es"
     },
-    {
-        "text": "Me gusta",
-        "file": "M/Me_gusta.mp3",
-        "language": "es",
-        "timestamp": "2025-11-09T14:30:00"
+    "6_Como_estas": {
+      "foreign": "¿Cómo estás?",
+      "translation": "Jak się masz?",
+      "audio_filename": "Como_estas.mp3",
+      "language": "es"
     },
-    {
-        "text": "¿Me traes el menú, por favor?",
-        "file": "M/Me_traes_el_menu_por_favor.mp3",
-        "language": "es",
-        "timestamp": "2025-11-09T14:30:00"
+    "7_Que_tal": {
+      "foreign": "¿Qué tal?",
+      "translation": "Jak się masz?",
+      "audio_filename": "Que_tal.mp3",
+      "language": "es"
     },
-    {
-        "text": "Muchas gracias",
-        "file": "M/Muchas_gracias.mp3",
-        "language": "es",
-        "timestamp": "2025-11-09T14:30:00"
+    "8_Y_tu": {
+      "foreign": "¿Y tú?",
+      "translation": "A ty?",
+      "audio_filename": "Y_tu.mp3",
+      "language": "es"
     },
-    {
-        "text": "No hay problema",
-        "file": "N/No_hay_problema.mp3",
-        "language": "es",
-        "timestamp": "2025-11-09T14:30:00"
+    "9_Aqui_tienes_tu": {
+      "foreign": "Aquí tienes (tú)",
+      "translation": "Proszę (tu masz)",
+      "audio_filename": "Aqui_tienes_tu.mp3",
+      "language": "es"
     },
-    {
-        "text": "Oh, bien, ahora está todo claro",
-        "file": "O/Oh_bien_ahora_esta_todo_claro.mp3",
-        "language": "es",
-        "timestamp": "2025-11-09T14:30:00"
+    "10_Gracias": {
+      "foreign": "Gracias",
+      "translation": "Dziękuję",
+      "audio_filename": "Gracias.mp3",
+      "language": "es"
     },
-    {
-        "text": "Por favor",
-        "file": "P/Por_favor.mp3",
-        "language": "es",
-        "timestamp": "2025-11-09T14:30:00"
+    "11_Muchas_gracias": {
+      "foreign": "Muchas gracias",
+      "translation": "Bardzo dziękuję",
+      "audio_filename": "Muchas_gracias.mp3",
+      "language": "es"
     },
-    {
-        "text": "¿Puedes repetir?",
-        "file": "P/Puedes_repetir.mp3",
-        "language": "es",
-        "timestamp": "2025-11-09T14:30:00"
+    "12_Por_favor": {
+      "foreign": "Por favor",
+      "translation": "Proszę",
+      "audio_filename": "Por_favor.mp3",
+      "language": "es"
     },
-    {
-        "text": "Tranquilízate",
-        "file": "T/Tranquilizate.mp3",
-        "language": "es",
-        "timestamp": "2025-11-09T14:30:00"
+    "13_Hazme_un_favor": {
+      "foreign": "Hazme un favor",
+      "translation": "Zrób mi przysługę",
+      "audio_filename": "Hazme_un_favor.mp3",
+      "language": "es"
     },
-    {
-        "text": "Ven un momento",
-        "file": "V/Ven_un_momento.mp3",
-        "language": "es",
-        "timestamp": "2025-11-09T14:30:00"
+    "14_Lo_siento": {
+      "foreign": "Lo siento",
+      "translation": "Przykro mi",
+      "audio_filename": "Lo_siento.mp3",
+      "language": "es"
+    },
+    "15_Ahora_vuelvo": {
+      "foreign": "Ahora vuelvo",
+      "translation": "Zaraz wracam",
+      "audio_filename": "Ahora_vuelvo.mp3",
+      "language": "es"
+    },
+    "16_Vale": {
+      "foreign": "Vale",
+      "translation": "Ok, zgoda",
+      "audio_filename": "Vale.mp3",
+      "language": "es"
+    },
+    "17_Vete": {
+      "foreign": "Vete",
+      "translation": "Idź sobie",
+      "audio_filename": "Vete.mp3",
+      "language": "es"
+    },
+    "18_Sientate": {
+      "foreign": "Siéntate",
+      "translation": "Usiądź",
+      "audio_filename": "Sientate.mp3",
+      "language": "es"
+    },
+    "19_Espera": {
+      "foreign": "Espera",
+      "translation": "Zaczekaj",
+      "audio_filename": "Espera.mp3",
+      "language": "es"
+    },
+    "20_Ven_un_momento": {
+      "foreign": "Ven un momento",
+      "translation": "Chodź na chwilę",
+      "audio_filename": "Ven_un_momento.mp3",
+      "language": "es"
+    },
+    "21_Sigue": {
+      "foreign": "Sigue",
+      "translation": "Kontynuuj",
+      "audio_filename": "Sigue.mp3",
+      "language": "es"
+    },
+    "22_Parate": {
+      "foreign": "Párate",
+      "translation": "Zatrzymaj się",
+      "audio_filename": "Parate.mp3",
+      "language": "es"
+    },
+    "23_Pasa_pasa": {
+      "foreign": "Pasa, pasa",
+      "translation": "Przechodź, przechodź",
+      "audio_filename": "Pasa_pasa.mp3",
+      "language": "es"
+    },
+    "24_Tranquilizate": {
+      "foreign": "Tranquilízate",
+      "translation": "Uspokój się",
+      "audio_filename": "Tranquilizate.mp3",
+      "language": "es"
+    },
+    "25_Vamos": {
+      "foreign": "Vamos",
+      "translation": "Idziemy, zróbmy to",
+      "audio_filename": "Vamos.mp3",
+      "language": "es"
+    },
+    "26_Esta_bien": {
+      "foreign": "Está bien",
+      "translation": "Jest dobrze, jest ok",
+      "audio_filename": "Esta_bien.mp3",
+      "language": "es"
+    },
+    "27_Esta_mejor": {
+      "foreign": "Está mejor",
+      "translation": "Jest lepiej",
+      "audio_filename": "Esta_mejor.mp3",
+      "language": "es"
+    },
+    "28_Nos_encontremos_alli": {
+      "foreign": "Nos encontremos allí",
+      "translation": "Widzimy się na miejscu",
+      "audio_filename": "Nos_encontremos_alli.mp3",
+      "language": "es"
+    },
+    "29_Ocupado": {
+      "foreign": "¡Ocupado!",
+      "translation": "Zajęte!",
+      "audio_filename": "Ocupado.mp3",
+      "language": "es"
+    },
+    "30_Quien_esta_alli": {
+      "foreign": "¿Quién está allí?",
+      "translation": "Kto tam?",
+      "audio_filename": "Quien_esta_alli.mp3",
+      "language": "es"
+    },
+    "31_No_te_preocupes": {
+      "foreign": "No te preocupes",
+      "translation": "Nie martw się",
+      "audio_filename": "No_te_preocupes.mp3",
+      "language": "es"
+    },
+    "32_Estoy_listo_a": {
+      "foreign": "Estoy listo/a",
+      "translation": "Jestem gotowy/gotowa",
+      "audio_filename": "Estoy_listo_a.mp3",
+      "language": "es"
+    },
+    "33_Hasta_manana": {
+      "foreign": "Hasta mañana",
+      "translation": "Do jutra",
+      "audio_filename": "Hasta_manana.mp3",
+      "language": "es"
+    },
+    "34_Hasta_luego": {
+      "foreign": "Hasta luego",
+      "translation": "Do później",
+      "audio_filename": "Hasta_luego.mp3",
+      "language": "es"
+    },
+    "35_Mucho_gusto": {
+      "foreign": "Mucho gusto",
+      "translation": "Bardzo mi miło",
+      "audio_filename": "Mucho_gusto.mp3",
+      "language": "es"
+    },
+    "36_Cuanto_es": {
+      "foreign": "¿Cuánto es?",
+      "translation": "Ile to kosztuje?",
+      "audio_filename": "Cuanto_es.mp3",
+      "language": "es"
+    },
+    "37_Que_es_esto": {
+      "foreign": "¿Qué es esto?",
+      "translation": "Co to jest?",
+      "audio_filename": "Que_es_esto.mp3",
+      "language": "es"
+    },
+    "38_Enhorabuena": {
+      "foreign": "¡Enhorabuena!",
+      "translation": "Gratulacje!",
+      "audio_filename": "Enhorabuena.mp3",
+      "language": "es"
+    },
+    "39_Buen_trabajo": {
+      "foreign": "¡Buen trabajo!",
+      "translation": "Dobra robota!",
+      "audio_filename": "Buen_trabajo.mp3",
+      "language": "es"
+    },
+    "40_Es_gratis": {
+      "foreign": "¿Es gratis?",
+      "translation": "Czy to jest darmowe?",
+      "audio_filename": "Es_gratis.mp3",
+      "language": "es"
+    },
+    "41_Como": {
+      "foreign": "¿Cómo?",
+      "translation": "Co proszę?",
+      "audio_filename": "Como.mp3",
+      "language": "es"
+    },
+    "42_Repite_por_favor": {
+      "foreign": "Repite, por favor",
+      "translation": "Powtórz, proszę",
+      "audio_filename": "Repite_por_favor.mp3",
+      "language": "es"
+    },
+    "43_No_se": {
+      "foreign": "No sé",
+      "translation": "Nie wiem",
+      "audio_filename": "No_se.mp3",
+      "language": "es"
+    },
+    "44_Necesito": {
+      "foreign": "Necesito…",
+      "translation": "Potrzebuję…",
+      "audio_filename": "Necesito.mp3",
+      "language": "es"
+    },
+    "45_Se_puede": {
+      "foreign": "¿Se puede?",
+      "translation": "Czy można?",
+      "audio_filename": "Se_puede.mp3",
+      "language": "es"
+    },
+    "46_Tengo_una_pregunta": {
+      "foreign": "Tengo una pregunta",
+      "translation": "Mam pytanie",
+      "audio_filename": "Tengo_una_pregunta.mp3",
+      "language": "es"
+    },
+    "47_Te_gusta": {
+      "foreign": "¿Te gusta?",
+      "translation": "Podoba Ci się?",
+      "audio_filename": "Te_gusta.mp3",
+      "language": "es"
+    },
+    "48_Me_gusta": {
+      "foreign": "Me gusta",
+      "translation": "Podoba mi się",
+      "audio_filename": "Me_gusta.mp3",
+      "language": "es"
+    },
+    "49_Otra_vez": {
+      "foreign": "Otra vez",
+      "translation": "Jeszcze raz/znowu",
+      "audio_filename": "Otra_vez.mp3",
+      "language": "es"
+    },
+    "50_Quiero_un_poco_de": {
+      "foreign": "Quiero un poco de…",
+      "translation": "Chcę trochę…",
+      "audio_filename": "Quiero_un_poco_de.mp3",
+      "language": "es"
+    },
+    "51_Por_supuesto": {
+      "foreign": "¡Por supuesto!",
+      "translation": "Oczywiście!",
+      "audio_filename": "Por_supuesto.mp3",
+      "language": "es"
+    },
+    "52_Que_tengas_un_buen_fin_de_semana": {
+      "foreign": "¡Que tengas un buen fin de semana!",
+      "translation": "Dobrego weekendu!",
+      "audio_filename": "Que_tengas_un_buen_fin_de_semana.mp3",
+      "language": "es"
+    },
+    "53_Escribelo_por_favor": {
+      "foreign": "Escríbelo, por favor",
+      "translation": "Zapisz to, proszę",
+      "audio_filename": "Escribelo_por_favor.mp3",
+      "language": "es"
+    },
+    "54_Solo_un_poco": {
+      "foreign": "Solo un poco",
+      "translation": "Tylko trochę",
+      "audio_filename": "Solo_un_poco.mp3",
+      "language": "es"
+    },
+    "55_Estas_de_acuerdo": {
+      "foreign": "¿Estás de acuerdo?",
+      "translation": "Zgadzasz się?",
+      "audio_filename": "Estas_de_acuerdo.mp3",
+      "language": "es"
+    },
+    "56_Estoy_de_acuerdo": {
+      "foreign": "Estoy de acuerdo",
+      "translation": "Zgadzam się",
+      "audio_filename": "Estoy_de_acuerdo.mp3",
+      "language": "es"
+    },
+    "57_No_estoy_de_acuerdo": {
+      "foreign": "No estoy de acuerdo",
+      "translation": "Nie zgadzam się",
+      "audio_filename": "No_estoy_de_acuerdo.mp3",
+      "language": "es"
+    },
+    "58_Me_da_igual": {
+      "foreign": "Me da igual",
+      "translation": "Obojętnie mi",
+      "audio_filename": "Me_da_igual.mp3",
+      "language": "es"
+    },
+    "59_No_me_importa": {
+      "foreign": "No me importa",
+      "translation": "Nie obchodzi mnie to",
+      "audio_filename": "No_me_importa.mp3",
+      "language": "es"
+    },
+    "60_Me_llamo": {
+      "foreign": "Me llamo…",
+      "translation": "Mam na imię…",
+      "audio_filename": "Me_llamo.mp3",
+      "language": "es"
+    },
+    "61_Soy_de_Polonia": {
+      "foreign": "Soy de Polonia",
+      "translation": "Jestem z Polski",
+      "audio_filename": "Soy_de_Polonia.mp3",
+      "language": "es"
+    },
+    "62_Perdon": {
+      "foreign": "Perdón",
+      "translation": "Przepraszam",
+      "audio_filename": "Perdon.mp3",
+      "language": "es"
+    },
+    "63_De_nada": {
+      "foreign": "De nada",
+      "translation": "Nie ma za co",
+      "audio_filename": "De_nada.mp3",
+      "language": "es"
+    },
+    "64_Que_tengas_un_buen_dia": {
+      "foreign": "¡Que tengas un buen día!",
+      "translation": "Dobrego dnia!",
+      "audio_filename": "Que_tengas_un_buen_dia.mp3",
+      "language": "es"
+    },
+    "65_Igualmente": {
+      "foreign": "Igualmente",
+      "translation": "Nawzajem",
+      "audio_filename": "Igualmente.mp3",
+      "language": "es"
+    },
+    "66_Habla_mas_despacio_por_favor": {
+      "foreign": "Habla más despacio, por favor",
+      "translation": "Mów wolniej, proszę",
+      "audio_filename": "Habla_mas_despacio_por_favor.mp3",
+      "language": "es"
+    },
+    "67_Gracias_por_tu_ayuda": {
+      "foreign": "Gracias por tu ayuda",
+      "translation": "Dziękuję za Twoją pomoc",
+      "audio_filename": "Gracias_por_tu_ayuda.mp3",
+      "language": "es"
+    },
+    "68_Gracias_por_tu_hospitalidad": {
+      "foreign": "Gracias por tu hospitalidad",
+      "translation": "Dziękuję za Twoją gościnność",
+      "audio_filename": "Gracias_por_tu_hospitalidad.mp3",
+      "language": "es"
+    },
+    "69_Buena_suerte": {
+      "foreign": "¡Buena suerte!",
+      "translation": "Powodzenia!",
+      "audio_filename": "Buena_suerte.mp3",
+      "language": "es"
+    },
+    "70_No_entiendo_nada": {
+      "foreign": "No entiendo (nada)",
+      "translation": "Nie rozumiem (nic)",
+      "audio_filename": "No_entiendo_nada.mp3",
+      "language": "es"
+    },
+    "71_Me_he_perdido": {
+      "foreign": "Me he perdido",
+      "translation": "Zgubiłem się",
+      "audio_filename": "Me_he_perdido.mp3",
+      "language": "es"
+    },
+    "72_Me_puedes_ayudar": {
+      "foreign": "¿Me puedes ayudar?",
+      "translation": "Czy możesz mi pomóc?",
+      "audio_filename": "Me_puedes_ayudar.mp3",
+      "language": "es"
+    },
+    "73_Hablas_ingles": {
+      "foreign": "¿Hablas inglés?",
+      "translation": "Mówisz po angielsku?",
+      "audio_filename": "Hablas_ingles.mp3",
+      "language": "es"
+    },
+    "74_Puedes_repetir": {
+      "foreign": "¿Puedes repetir?",
+      "translation": "Możesz powtórzyć?",
+      "audio_filename": "Puedes_repetir.mp3",
+      "language": "es"
+    },
+    "75_Disculpe_donde_esta_el_bano": {
+      "foreign": "Disculpe, ¿dónde está el baño?",
+      "translation": "Przepraszam, gdzie jest łazienka?",
+      "audio_filename": "Disculpe_donde_esta_el_bano.mp3",
+      "language": "es"
+    },
+    "76_Puede_prepararme_la_comida_sin": {
+      "foreign": "¿Puede prepararme la comida sin…",
+      "translation": "Czy może Pan przygotować danie bez…?",
+      "audio_filename": "Puede_prepararme_la_comida_sin.mp3",
+      "language": "es"
+    },
+    "77_Donde_puedo_encontrar": {
+      "foreign": "¿Dónde puedo encontrar…?",
+      "translation": "Gdzie mogę znaleźć…?",
+      "audio_filename": "Donde_puedo_encontrar.mp3",
+      "language": "es"
+    },
+    "78_Que_me_recomienda": {
+      "foreign": "¿Qué me recomienda?",
+      "translation": "Co mi Pan poleca?",
+      "audio_filename": "Que_me_recomienda.mp3",
+      "language": "es"
+    },
+    "79_Que_significa": {
+      "foreign": "¿Qué significa…?",
+      "translation": "Co znaczy…?",
+      "audio_filename": "Que_significa.mp3",
+      "language": "es"
+    },
+    "80_Como_se_dice": {
+      "foreign": "¿Cómo se dice…?",
+      "translation": "Jak powiedzieć…?",
+      "audio_filename": "Como_se_dice.mp3",
+      "language": "es"
+    },
+    "81_Hay_wi_fi_Cual_es_la_contrasena": {
+      "foreign": "¿Hay wi-fi? ¿Cuál es la contraseña?",
+      "translation": "Czy jest WIFI? Jakie jest hasło?",
+      "audio_filename": "Hay_wi_fi_Cual_es_la_contrasena.mp3",
+      "language": "es"
+    },
+    "82_Estoy_mejorando_mi_espanol": {
+      "foreign": "Estoy mejorando mi español",
+      "translation": "Pracuję nad moim hiszpańskim",
+      "audio_filename": "Estoy_mejorando_mi_espanol.mp3",
+      "language": "es"
+    },
+    "83_Hablo_espanol_solo_un_poquito": {
+      "foreign": "Hablo español solo un poquito",
+      "translation": "Mówię po hiszpańsku tylko troszeczkę",
+      "audio_filename": "Hablo_espanol_solo_un_poquito.mp3",
+      "language": "es"
+    },
+    "84_No_hay_problema": {
+      "foreign": "No hay problema",
+      "translation": "Nie ma problemu",
+      "audio_filename": "No_hay_problema.mp3",
+      "language": "es"
+    },
+    "85_No_pasa_nada": {
+      "foreign": "No pasa nada",
+      "translation": "Nic się nie stało",
+      "audio_filename": "No_pasa_nada.mp3",
+      "language": "es"
+    },
+    "86_Adios": {
+      "foreign": "¡Adiós!",
+      "translation": "Do widzenia!",
+      "audio_filename": "Adios.mp3",
+      "language": "es"
+    },
+    "87_Puedo_pagar_con_tarjeta": {
+      "foreign": "¿Puedo pagar con tarjeta?",
+      "translation": "Czy mogę zapłacić kartą?",
+      "audio_filename": "Puedo_pagar_con_tarjeta.mp3",
+      "language": "es"
+    },
+    "88_Cuanto_le_debo": {
+      "foreign": "¿Cuánto le debo?",
+      "translation": "Ile Panu/Pani płacę?",
+      "audio_filename": "Cuanto_le_debo.mp3",
+      "language": "es"
+    },
+    "89_Tengo_una_reserva_a_nombre_de": {
+      "foreign": "Tengo una reserva a nombre de…",
+      "translation": "Mam rezerwację na nazwisko…",
+      "audio_filename": "Tengo_una_reserva_a_nombre_de.mp3",
+      "language": "es"
+    },
+    "90_El_desayuno_esta_incluido": {
+      "foreign": "¿El desayuno está incluido?",
+      "translation": "Śniadanie jest wliczone w cenę?",
+      "audio_filename": "El_desayuno_esta_incluido.mp3",
+      "language": "es"
+    },
+    "91_Mi_tarjeta_no_funciona": {
+      "foreign": "Mi tarjeta no funciona",
+      "translation": "Moja karta nie działa",
+      "audio_filename": "Mi_tarjeta_no_funciona.mp3",
+      "language": "es"
+    },
+    "92_Donde_esta_la_farmacia": {
+      "foreign": "¿Dónde está la farmacia?",
+      "translation": "Gdzie jest apteka?",
+      "audio_filename": "Donde_esta_la_farmacia.mp3",
+      "language": "es"
+    },
+    "93_Perdon_Me_puedes_hacer_una_foto": {
+      "foreign": "Perdón, ¿Me puedes hacer una foto?",
+      "translation": "Przepraszam, czy możesz mi zrobić zdjęcie?",
+      "audio_filename": "Perdon_Me_puedes_hacer_una_foto.mp3",
+      "language": "es"
+    },
+    "94_No_soy_de_aqui": {
+      "foreign": "No soy de aquí",
+      "translation": "Nie jestem stąd",
+      "audio_filename": "No_soy_de_aqui.mp3",
+      "language": "es"
+    },
+    "95_La_cuenta_por_favor": {
+      "foreign": "La cuenta, por favor",
+      "translation": "Rachunek, proszę",
+      "audio_filename": "La_cuenta_por_favor.mp3",
+      "language": "es"
+    },
+    "96_Donde_puedo_comprar_un_billete_de_tren": {
+      "foreign": "¿Dónde puedo comprar un billete de tren?",
+      "translation": "Gdzie mogę kupić bilet na pociąg?",
+      "audio_filename": "Donde_puedo_comprar_un_billete_de_tren.mp3",
+      "language": "es"
+    },
+    "97_Quiero_cambiar_eslotis_por_euro": {
+      "foreign": "Quiero cambiar eslotis por euro",
+      "translation": "Chcę wymienić złotówki na euro",
+      "audio_filename": "Quiero_cambiar_eslotis_por_euro.mp3",
+      "language": "es"
+    },
+    "98_Que_aproveche": {
+      "foreign": "¡Qué aproveche!",
+      "translation": "Smacznego!",
+      "audio_filename": "Que_aproveche.mp3",
+      "language": "es"
+    },
+    "99_Me_traes_el_menu_por_favor": {
+      "foreign": "¿Me traes el menú, por favor?",
+      "translation": "Czy możesz przynieść mi menu, proszę?",
+      "audio_filename": "Me_traes_el_menu_por_favor.mp3",
+      "language": "es"
+    },
+    "100_Cuanto_cuesta_el_billete_de_ida_y_vuelta": {
+      "foreign": "¿Cuánto cuesta el billete de ida y vuelta?",
+      "translation": "Ile kosztuje bilet w dwie strony?",
+      "audio_filename": "Cuanto_cuesta_el_billete_de_ida_y_vuelta.mp3",
+      "language": "es"
+    },
+    "101_Cuanto_tiempo": {
+      "foreign": "¡Cuánto tiempo!",
+      "translation": "Dawno się nie widzieliśmy!",
+      "audio_filename": "Cuanto_tiempo.mp3",
+      "language": "es"
+    },
+    "102_Cuantos_anos_tienes": {
+      "foreign": "¡Cuántos años tienes!",
+      "translation": "Ile masz lat!",
+      "audio_filename": "Cuantos_anos_tienes.mp3",
+      "language": "es"
+    },
+    "103_De_donde_eres": {
+      "foreign": "¿De dónde eres?",
+      "translation": "Skąd jesteś/pochodzisz?",
+      "audio_filename": "De_donde_eres.mp3",
+      "language": "es"
+    },
+    "104_A_que_te_dedicas": {
+      "foreign": "¿A qué te dedicas?",
+      "translation": "Co robisz / Czym się zajmujesz?",
+      "audio_filename": "A_que_te_dedicas.mp3",
+      "language": "es"
+    },
+    "105_Que_lenguas_hablas": {
+      "foreign": "¿Qué lenguas hablas?",
+      "translation": "Jakimi językami mówisz/znasz?",
+      "audio_filename": "Que_lenguas_hablas.mp3",
+      "language": "es"
+    },
+    "106_Que_dia_es_hoy": {
+      "foreign": "¿Qué día es hoy?",
+      "translation": "Jaki dzień jest dzisiaj?",
+      "audio_filename": "Que_dia_es_hoy.mp3",
+      "language": "es"
+    },
+    "107_Que_hora_es_Son_las": {
+      "foreign": "¿Qué hora es? Son las…",
+      "translation": "Która jest godzina?",
+      "audio_filename": "Que_hora_es_Son_las.mp3",
+      "language": "es"
+    },
+    "108_Aqui_esta": {
+      "foreign": "Aqui está",
+      "translation": "Proszę, oto jest (podając coś)",
+      "audio_filename": "Aqui_esta.mp3",
+      "language": "es"
+    },
+    "109_Poco_poquito": {
+      "foreign": "Poco, poquito",
+      "translation": "Trochę, troszeczkę.",
+      "audio_filename": "Poco_poquito.mp3",
+      "language": "es"
+    },
+    "110_Cuando_es_tu_cumpleanos": {
+      "foreign": "¿Cuándo es tu cumpleaños?",
+      "translation": "Kiedy się urodziłeś?",
+      "audio_filename": "Cuando_es_tu_cumpleanos.mp3",
+      "language": "es"
+    },
+    "111_cero_uno_dos_tres_cuatro_cinco": {
+      "foreign": "cero/uno/dos/tres/cuatro/cinco",
+      "translation": "0/1/2/3/4/5",
+      "audio_filename": "cero_uno_dos_tres_cuatro_cinco.mp3",
+      "language": "es"
+    },
+    "112_seis_siete_ocho_nueve_diez": {
+      "foreign": "seis/siete/ocho/nueve/diez",
+      "translation": "6/7/8/9/10",
+      "audio_filename": "seis_siete_ocho_nueve_diez.mp3",
+      "language": "es"
+    },
+    "113_Que_hace": {
+      "foreign": "¿Qué hace?",
+      "translation": "Co robisz/Czym się zajmujesz?",
+      "audio_filename": "Que_hace.mp3",
+      "language": "es"
+    },
+    "114_Ni_falta_que_hace": {
+      "foreign": "¡Ni falta que hace!",
+      "translation": "Nie rób tego!",
+      "audio_filename": "Ni_falta_que_hace.mp3",
+      "language": "es"
+    },
+    "115_Tengo_mucho_que_hacer": {
+      "foreign": "Tengo mucho que hacer.",
+      "translation": "Mam dużo do zrobienia.",
+      "audio_filename": "Tengo_mucho_que_hacer.mp3",
+      "language": "es"
+    },
+    "116_Gracias_Gracias_A_ti_A_usted": {
+      "foreign": "¡Gracias!/¡Gracias A ti|A usted!",
+      "translation": "Dziękuję!",
+      "audio_filename": "Gracias_Gracias_A_ti_Gracias_A_usted.mp3",
+      "language": "es"
+    },
+    "117_Gracias_por_todo": {
+      "foreign": "¡Gracias por todo!",
+      "translation": "Dziękuję za wszystko!",
+      "audio_filename": "Gracias_por_todo.mp3",
+      "language": "es"
+    },
+    "118_Realmente_lo_aprecio": {
+      "foreign": "¡Realmente lo aprecio!",
+      "translation": "Naprawdę to doceniam!",
+      "audio_filename": "Realmente_lo_aprecio.mp3",
+      "language": "es"
+    },
+    "119_No_hay_de_que": {
+      "foreign": "No hay de qué",
+      "translation": "Nie ma za co.",
+      "audio_filename": "No_hay_de_que.mp3",
+      "language": "es"
+    },
+    "120_Tienes_mala_cara": {
+      "foreign": "Tienes mala cara",
+      "translation": "Nie wyglądasz dobrze",
+      "audio_filename": "Tienes_mala_cara.mp3",
+      "language": "es"
+    },
+    "121_Salud": {
+      "foreign": "¡Salud!",
+      "translation": "Na zdrowie",
+      "audio_filename": "Salud.mp3",
+      "language": "es"
+    },
+    "122_Esto_es_delicioso": {
+      "foreign": "¡Esto es  delicioso!",
+      "translation": "To jest pyszne!",
+      "audio_filename": "Esto_es_delicioso.mp3",
+      "language": "es"
+    },
+    "124_SER_byc": {
+      "foreign": "SER [być]",
+      "translation": "soy/eres/es somos/sois/son",
+      "audio_filename": "SER.mp3",
+      "language": "es"
+    },
+    "125_TENER_miec": {
+      "foreign": "TENER [mieć]",
+      "translation": "tengo/tieres/tiene tenemos/tenéis/tienen",
+      "audio_filename": "TENER.mp3",
+      "language": "es"
+    },
+    "126_ESTAR_byc": {
+      "foreign": "ESTAR [być]",
+      "translation": "estoy/estás/está estamos/estáis/están",
+      "audio_filename": "ESTAR.mp3",
+      "language": "es"
+    },
+    "127_IR_isc": {
+      "foreign": "IR [iść]",
+      "translation": "voy/vas/va vamos/vais/van",
+      "audio_filename": "IR.mp3",
+      "language": "es"
+    },
+    "128_veinti": {
+      "foreign": "veinti …",
+      "translation": "20/2…",
+      "audio_filename": "veinti.mp3",
+      "language": "es"
+    },
+    "129_treinta_y": {
+      "foreign": "treinta y …",
+      "translation": "30/3…",
+      "audio_filename": "treinta_y.mp3",
+      "language": "es"
+    },
+    "130_cuarent_y": {
+      "foreign": "cuarent y …",
+      "translation": "40/4…",
+      "audio_filename": "cuarent_y.mp3",
+      "language": "es"
+    },
+    "131_cincuenta_y": {
+      "foreign": "cincuenta y …",
+      "translation": "50/5…",
+      "audio_filename": "cincuenta_y.mp3",
+      "language": "es"
+    },
+    "132_seisenta_y": {
+      "foreign": "seisenta y …",
+      "translation": "60/6…",
+      "audio_filename": "seisenta_y.mp3",
+      "language": "es"
+    },
+    "133_setenta_y": {
+      "foreign": "setenta y …",
+      "translation": "70/7…",
+      "audio_filename": "setenta_y.mp3",
+      "language": "es"
+    },
+    "134_ochenta_y": {
+      "foreign": "ochenta y …",
+      "translation": "80/8…",
+      "audio_filename": "ochenta_y.mp3",
+      "language": "es"
+    },
+    "135_noventa_y": {
+      "foreign": "noventa y …",
+      "translation": "90/9…",
+      "audio_filename": "noventa_y.mp3",
+      "language": "es"
+    },
+    "136_cien": {
+      "foreign": "cien",
+      "translation": "100",
+      "audio_filename": "cien.mp3",
+      "language": "es"
+    },
+    "137_Claro": {
+      "foreign": "Claro",
+      "translation": "Jasne/oczywiście",
+      "audio_filename": "Claro.mp3",
+      "language": "es"
+    },
+    "138_Oh_bien_ahora_esta_todo_claro": {
+      "foreign": "Oh, bien, ahora está todo claro",
+      "translation": "Oh, teraz wszystko jest jasne",
+      "audio_filename": "Oh_bien_ahora_esta_todo_claro.mp3",
+      "language": "es"
+    },
+    "139_Claro_que_si": {
+      "foreign": "¡Claro que sí!",
+      "translation": "Tak, oczywiście",
+      "audio_filename": "Claro_que_si.mp3",
+      "language": "es"
+    },
+    "140_Cuantas_veces": {
+      "foreign": "Cuantas veces",
+      "translation": "Ile razy …",
+      "audio_filename": "Cuantas_veces.mp3",
+      "language": "es"
+    },
+    "141_Aqui_tiene_usted": {
+      "foreign": "Aquí tiene (usted)",
+      "translation": "Proszę (uprzejmie, tu masz)",
+      "audio_filename": "Aqui_tiene_usted.mp3",
+      "language": "es"
+    },
+    "142_Mas_o_menos": {
+      "foreign": "Más o menos",
+      "translation": "Mniej więcej",
+      "audio_filename": "Mas_o_menos.mp3",
+      "language": "es"
+    },
+    "143_Sin_problema": {
+      "foreign": "Sin problema",
+      "translation": "Nie ma sprawy",
+      "audio_filename": "Sin_problema.mp3",
+      "language": "es"
+    },
+    "144_Diga": {
+      "foreign": "¿Diga?",
+      "translation": "Słucham (tel.)?",
+      "audio_filename": "Diga.mp3",
+      "language": "es"
+    },
+    "145_asterisco_almohadilla": {
+      "foreign": "asterisco/almohadilla",
+      "translation": "*/#",
+      "audio_filename": "asterisco_almohadilla.mp3",
+      "language": "es"
+    },
+    "0_Las_frases_basicas": {
+      "foreign": "Las frases básicas",
+      "translation": "Podstawowe zwroty",
+      "audio_filename": "Las_frases_basicas.mp3",
+      "language": "es"
+    },
+    "1_Hola": {
+      "foreign": "¡Hola!",
+      "translation": "Cześć!",
+      "audio_filename": "Hola.mp3",
+      "language": "es"
+    },
+    "2_Buenos_dias": {
+      "foreign": "Buenos días",
+      "translation": "Dzień dobry",
+      "audio_filename": "Buenos_dias.mp3",
+      "language": "es"
+    },
+    "3_Buenas_tardes": {
+      "foreign": "Buenas tardes",
+      "translation": "Dobry wieczór",
+      "audio_filename": "Buenas_tardes.mp3",
+      "language": "es"
+    },
+    "4_Buenas_noches": {
+      "foreign": "Buenas noches",
+      "translation": "Dobranoc",
+      "audio_filename": "Buenas_noches.mp3",
+      "language": "es"
+    },
+    "5_Adios": {
+      "foreign": "¡Adiós!",
+      "translation": "Do widzenia!",
+      "audio_filename": "Adios.mp3",
+      "language": "es"
+    },
+    "6_Hasta_la_vista": {
+      "foreign": "Hasta la vista",
+      "translation": "Do zobaczenia",
+      "audio_filename": "Hasta_la_vista.mp3",
+      "language": "es"
+    },
+    "7_Hasta_pronto": {
+      "foreign": "Hasta pronto",
+      "translation": "Do zobaczenia szybko",
+      "audio_filename": "Hasta_pronto.mp3",
+      "language": "es"
+    },
+    "8_Hasta_la_proxima": {
+      "foreign": "Hasta la próxima",
+      "translation": "Do następnego",
+      "audio_filename": "Hasta_la_proxima.mp3",
+      "language": "es"
+    },
+    "9_Hasta_manana": {
+      "foreign": "Hasta mañana",
+      "translation": "Do jutra",
+      "audio_filename": "Hasta_manana.mp3",
+      "language": "es"
+    },
+    "10_Como_estas_inf_Que_tal": {
+      "foreign": "¿Cómo estás? (inf. ¿Qué tal?)",
+      "translation": "Jak się masz?",
+      "audio_filename": "Como_estas_inf_Que_tal.mp3",
+      "language": "es"
+    },
+    "11_Gracias": {
+      "foreign": "Gracias",
+      "translation": "Dziękuję",
+      "audio_filename": "Gracias.mp3",
+      "language": "es"
+    },
+    "13_Perdon": {
+      "foreign": "¡Perdón!",
+      "translation": "Przepraszam!",
+      "audio_filename": "Perdon.mp3",
+      "language": "es"
+    },
+    "15_De_nada": {
+      "foreign": "De nada",
+      "translation": "Nie ma za co",
+      "audio_filename": "De_nada.mp3",
+      "language": "es"
+    },
+    "16_Si": {
+      "foreign": "Sí",
+      "translation": "Tak",
+      "audio_filename": "Si.mp3",
+      "language": "es"
+    },
+    "17_No": {
+      "foreign": "No",
+      "translation": "Nie",
+      "audio_filename": "No.mp3",
+      "language": "es"
+    },
+    "18_No_entiendo": {
+      "foreign": "No entiendo",
+      "translation": "Nie rozumiem",
+      "audio_filename": "No_entiendo.mp3",
+      "language": "es"
+    },
+    "19_Puedes_repetir": {
+      "foreign": "¿Puedes repetir?",
+      "translation": "Czy możesz powtórzyć?",
+      "audio_filename": "Puedes_repetir.mp3",
+      "language": "es"
+    },
+    "20_Hablas_ingles": {
+      "foreign": "¿Hablas inglés?",
+      "translation": "Mówisz po angielsku?",
+      "audio_filename": "Hablas_ingles.mp3",
+      "language": "es"
+    },
+    "21_Como_te_llamas": {
+      "foreign": "¿Cómo te llamas?",
+      "translation": "Jak się nazywasz?",
+      "audio_filename": "Como_te_llamas.mp3",
+      "language": "es"
+    },
+    "22_Me_llamo": {
+      "foreign": "Me llamo",
+      "translation": "Nazywam się",
+      "audio_filename": "Me_llamo.mp3",
+      "language": "es"
+    },
+    "23_Estoy_aqui_de_vacaciones": {
+      "foreign": "Estoy aquí de vacaciones",
+      "translation": "Jestem tutaj na wakacjach",
+      "audio_filename": "Estoy_aqui_de_vacaciones.mp3",
+      "language": "es"
+    },
+    "0_En_la_calle": {
+      "foreign": "En la calle",
+      "translation": "Na ulicy",
+      "audio_filename": "En_la_calle.mp3",
+      "language": "es"
+    },
+    "1_Donde_esta_la_cafeteria": {
+      "foreign": "¿Dónde está la cafetería?",
+      "translation": "Gdzie jest kawiarnia?",
+      "audio_filename": "Donde_esta_la_cafeteria.mp3",
+      "language": "es"
+    },
+    "2_Como_voy_a_la_estacion_de_trenes": {
+      "foreign": "¿Cómo voy a la estación de trenes?",
+      "translation": "Jak dojdę na dworzec?",
+      "audio_filename": "Como_voy_a_la_estacion_de_trenes.mp3",
+      "language": "es"
+    },
+    "3_Busco_una_tienda_de_recuerdos": {
+      "foreign": "Busco una tienda de recuerdos",
+      "translation": "Szukam sklepu z pamiątkami",
+      "audio_filename": "Busco_una_tienda_de_recuerdos.mp3",
+      "language": "es"
+    },
+    "4_Me_he_perdido": {
+      "foreign": "Me he perdido",
+      "translation": "Zgubiłem się",
+      "audio_filename": "Me_he_perdido.mp3",
+      "language": "es"
+    },
+    "5_Me_puedes_ayudar": {
+      "foreign": "¿Me puedes ayudar?",
+      "translation": "Możesz mi pomóc?",
+      "audio_filename": "Me_puedes_ayudar.mp3",
+      "language": "es"
+    },
+    "6_Necesito_encontrar_un_cajero_automatico": {
+      "foreign": "Necesito encontrar un cajero automático",
+      "translation": "Potrzebuję znaleźć bankomat",
+      "audio_filename": "Necesito_encontrar_un_cajero_automatico.mp3",
+      "language": "es"
+    },
+    "7_Donde_puedo_encontrar_un_buen_restaurante": {
+      "foreign": "¿Dónde puedo encontrar un buen restaurante?",
+      "translation": "Gdzie mogę znaleźć dobrą restaurację?",
+      "audio_filename": "Donde_puedo_encontrar_un_buen_restaurante.mp3",
+      "language": "es"
+    },
+    "8_Que_hora_es": {
+      "foreign": "¿Qué hora es?",
+      "translation": "Która jest godzina?",
+      "audio_filename": "Que_hora_es.mp3",
+      "language": "es"
+    },
+    "9_A_que_hora_sale_el_proximo_autobus": {
+      "foreign": "¿A qué hora sale el próximo autobús?",
+      "translation": "O której odjeżdża następny autobus?",
+      "audio_filename": "A_que_hora_sale_el_proximo_autobus.mp3",
+      "language": "es"
+    },
+    "10_Cuanto_cuesta_un_billete_de_ida_y_vuelta": {
+      "foreign": "¿Cuánto cuesta un billete de ida y vuelta?",
+      "translation": "Ile kosztuje bilet tam i z powrotem?",
+      "audio_filename": "Cuanto_cuesta_un_billete_de_ida_y_vuelta.mp3",
+      "language": "es"
+    },
+    "11_Puedes_recomendarme_un_buen_lugar_para_visitar": {
+      "foreign": "¿Puedes recomendarme un buen lugar para visitar?",
+      "translation": "Czy możesz polecić mi dobre miejsce do odwiedzenia?",
+      "audio_filename": "Puedes_recomendarme_un_buen_lugar_para_visitar.mp3",
+      "language": "es"
+    },
+    "12_Puedo_tomar_una_foto_aqui": {
+      "foreign": "¿Puedo tomar una foto aquí?",
+      "translation": "Czy mogę tu zrobić zdjęcie?",
+      "audio_filename": "Puedo_tomar_una_foto_aqui.mp3",
+      "language": "es"
+    },
+    "13_Cuando_abre_cierra_el_museo": {
+      "foreign": "¿Cuándo abre/ cierra el museo?",
+      "translation": "Kiedy otwiera się/zamyka muzeum?",
+      "audio_filename": "Cuando_abre_cierra_el_museo.mp3",
+      "language": "es"
+    },
+    "14_Donde_puedo_alquilar_una_bicicleta": {
+      "foreign": "¿Dónde puedo alquilar una bicicleta?",
+      "translation": "Gdzie mogę wynająć rower?",
+      "audio_filename": "Donde_puedo_alquilar_una_bicicleta.mp3",
+      "language": "es"
+    },
+    "15_Hay_algun_mercado_cercano": {
+      "foreign": "¿Hay algún mercado cercano?",
+      "translation": "Czy jest jakiś targ w pobliżu?",
+      "audio_filename": "Hay_algun_mercado_cercano.mp3",
+      "language": "es"
+    },
+    "16_Cual_es_la_mejor_manera_de_llegar_al_aeropuerto": {
+      "foreign": "¿Cuál es la mejor manera de llegar al aeropuerto?",
+      "translation": "Jaki jest najlepszy sposób na dojazd na lotnisko?",
+      "audio_filename": "Cual_es_la_mejor_manera_de_llegar_al_aeropuerto.mp3",
+      "language": "es"
+    },
+    "17_Donde_puedo_comprar_billetes_para_el_transporte_pu": {
+      "foreign": "¿Dónde puedo comprar billetes para el transporte público?",
+      "translation": "Gdzie mogę kupić bilety na transport publiczny?",
+      "audio_filename": "Donde_puedo_comprar_billetes_para_el_transporte_pu.mp3",
+      "language": "es"
+    },
+    "18_Cuanto_cuesta_un_billete_de_metro_autobus": {
+      "foreign": "¿Cuánto cuesta un billete de metro/autobús?",
+      "translation": "Ile kosztuje bilet na metro/autobus?",
+      "audio_filename": "Cuanto_cuesta_un_billete_de_metro_autobus.mp3",
+      "language": "es"
+    },
+    "19_Cual_es_la_atraccion_mas_popular_aqui": {
+      "foreign": "¿Cuál es la atracción más popular aquí?",
+      "translation": "Jaka jest najpopularniejsza atrakcja tutaj?",
+      "audio_filename": "Cual_es_la_atraccion_mas_popular_aqui.mp3",
+      "language": "es"
+    },
+    "20_Donde_se_celebran_los_espectaculos_de_flamenco": {
+      "foreign": "¿Dónde se celebran los espectáculos de flamenco?",
+      "translation": "Gdzie odbywają się pokazy flamenco?",
+      "audio_filename": "Donde_se_celebran_los_espectaculos_de_flamenco.mp3",
+      "language": "es"
+    },
+    "21_Donde_esta_la_oficina_de_informacion_turistica": {
+      "foreign": "¿Dónde está la oficina de información turística?",
+      "translation": "Gdzie znajduje się biuro informacji turystycznej?",
+      "audio_filename": "Donde_esta_la_oficina_de_informacion_turistica.mp3",
+      "language": "es"
+    },
+    "0_En_la_tienda": {
+      "foreign": "En la tienda",
+      "translation": "W sklepie",
+      "audio_filename": "En_la_tienda.mp3",
+      "language": "es"
+    },
+    "1_Cuanto_cuesta": {
+      "foreign": "¿Cuánto cuesta?",
+      "translation": "Ile kosztuje?",
+      "audio_filename": "Cuanto_cuesta.mp3",
+      "language": "es"
+    },
+    "2_Puedo_probarmelo": {
+      "foreign": "¿Puedo probármelo?",
+      "translation": "Czy mogę to przymierzyć?",
+      "audio_filename": "Puedo_probarmelo.mp3",
+      "language": "es"
+    },
+    "3_Donde_estan_los_probadores": {
+      "foreign": "¿Dónde están los probadores?",
+      "translation": "Gdzie są przymierzalnie?",
+      "audio_filename": "Donde_estan_los_probadores.mp3",
+      "language": "es"
+    },
+    "4_Teneis_otra_talla": {
+      "foreign": "¿Tenéis otra talla?",
+      "translation": "Macie inny rozmiar?",
+      "audio_filename": "Teneis_otra_talla.mp3",
+      "language": "es"
+    },
+    "5_Me_lo_llevo": {
+      "foreign": "Me lo llevo",
+      "translation": "Biorę to",
+      "audio_filename": "Me_lo_llevo.mp3",
+      "language": "es"
+    },
+    "6_Tiene_algun_descuento": {
+      "foreign": "¿Tiene algún descuento?",
+      "translation": "Czy jest jakaś zniżka?",
+      "audio_filename": "Tiene_algun_descuento.mp3",
+      "language": "es"
+    },
+    "7_No_tengo_dinero_en_efectivo": {
+      "foreign": "No tengo dinero en efectivo",
+      "translation": "Nie mam gotówki",
+      "audio_filename": "No_tengo_dinero_en_efectivo.mp3",
+      "language": "es"
+    },
+    "8_Puedo_pagar_con_tarjeta_de_credito": {
+      "foreign": "¿Puedo pagar con tarjeta de crédito?",
+      "translation": "Mogę zapłacić kartą?",
+      "audio_filename": "Puedo_pagar_con_tarjeta_de_credito.mp3",
+      "language": "es"
+    },
+    "0_En_el_resturante": {
+      "foreign": "En el resturante",
+      "translation": "W restauracji",
+      "audio_filename": "En_el_resturante.mp3",
+      "language": "es"
+    },
+    "1_Me_gustaria_reservar_una_mesa": {
+      "foreign": "Me gustaría reservar una mesa",
+      "translation": "Chciałbym zarezerwować stolik",
+      "audio_filename": "Me_gustaria_reservar_una_mesa.mp3",
+      "language": "es"
+    },
+    "2_Tienen_una_mesa_libre": {
+      "foreign": "¿Tienen una mesa libre?",
+      "translation": "Czy mają Państwo wolny stolik?",
+      "audio_filename": "Tienen_una_mesa_libre.mp3",
+      "language": "es"
+    },
+    "3_Cual_es_la_especialidad_de_la_casa": {
+      "foreign": "¿Cuál es la especialidad de la casa?",
+      "translation": "Jaka jest specjalność lokalu?",
+      "audio_filename": "Cual_es_la_especialidad_de_la_casa.mp3",
+      "language": "es"
+    },
+    "4_Que_me_recomienda": {
+      "foreign": "¿Qué me recomienda?",
+      "translation": "Co mi Pan/Pani poleca?",
+      "audio_filename": "Que_me_recomienda.mp3",
+      "language": "es"
+    },
+    "5_Me_gustaria_una_cerveza_vino_te": {
+      "foreign": "Me gustaría una cerveza/vino/té",
+      "translation": "Chciałbym piwo/wino/herbatę",
+      "audio_filename": "Me_gustaria_una_cerveza_vino_te.mp3",
+      "language": "es"
+    },
+    "6_Cual_es_el_plato_tipico_de_esta_region": {
+      "foreign": "¿Cuál es el plato típico de esta región?",
+      "translation": "Jaka jest typowa potrawa z tej okolicy?",
+      "audio_filename": "Cual_es_el_plato_tipico_de_esta_region.mp3",
+      "language": "es"
+    },
+    "7_Quiero_una_paella": {
+      "foreign": "Quiero una paella",
+      "translation": "Chcę paellę",
+      "audio_filename": "Quiero_una_paella.mp3",
+      "language": "es"
+    },
+    "8_Voy_a_tomar_una_tonica": {
+      "foreign": "Voy a tomar una tónica",
+      "translation": "Napiję się toniku",
+      "audio_filename": "Voy_a_tomar_una_tonica.mp3",
+      "language": "es"
+    },
+    "9_Me_puede_traer_un_vaso_de_agua": {
+      "foreign": "¿Me puede traer un vaso de agua?",
+      "translation": "Czy może mi Pan/Pani przynieść szklankę wody?",
+      "audio_filename": "Me_puede_traer_un_vaso_de_agua.mp3",
+      "language": "es"
+    },
+    "10_Que_hay_de_postre": {
+      "foreign": "¿Qué hay de postre?",
+      "translation": "Jakie są desery?",
+      "audio_filename": "Que_hay_de_postre.mp3",
+      "language": "es"
+    },
+    "11_La_cuenta_por_favor": {
+      "foreign": "La cuenta, por favor",
+      "translation": "Poproszę rachunek",
+      "audio_filename": "La_cuenta_por_favor.mp3",
+      "language": "es"
+    },
+    "12_Prefiero_pagar_en_efectivo": {
+      "foreign": "Prefiero pagar en efectivo",
+      "translation": "Wolę zapłacić gotówką",
+      "audio_filename": "Prefiero_pagar_en_efectivo.mp3",
+      "language": "es"
+    },
+    "13_Donde_esta_el_bano": {
+      "foreign": "¿Dónde está el baño?",
+      "translation": "Gdzie jest toaleta?",
+      "audio_filename": "Donde_esta_el_bano.mp3",
+      "language": "es"
+    },
+    "0_En_la_playa": {
+      "foreign": "En la playa",
+      "translation": "Na plaży",
+      "audio_filename": "En_la_playa.mp3",
+      "language": "es"
+    },
+    "1_La_playa_es_hermosa": {
+      "foreign": "La playa es hermosa",
+      "translation": "Plaża jest piękna",
+      "audio_filename": "La_playa_es_hermosa.mp3",
+      "language": "es"
+    },
+    "2_Donde_puedo_alquilar_una_sombrilla": {
+      "foreign": "¿Dónde puedo alquilar una sombrilla?",
+      "translation": "Gdzie mogę wynająć parasolkę?",
+      "audio_filename": "Donde_puedo_alquilar_una_sombrilla.mp3",
+      "language": "es"
+    },
+    "3_Que_playas_recomiendas": {
+      "foreign": "¿Qué playas recomiendas?",
+      "translation": "Jakie plaże polecasz?",
+      "audio_filename": "Que_playas_recomiendas.mp3",
+      "language": "es"
+    },
+    "4_Que_tiempo_hara_manana": {
+      "foreign": "¿Qué tiempo hará mañana?",
+      "translation": "Jaka będzie jutro pogoda?",
+      "audio_filename": "Que_tiempo_hara_manana.mp3",
+      "language": "es"
+    },
+    "5_A_que_hora_sale_el_proximo_barco": {
+      "foreign": "¿A qué hora sale el próximo barco?",
+      "translation": "O której odpływa następny statek?",
+      "audio_filename": "A_que_hora_sale_el_proximo_barco.mp3",
+      "language": "es"
+    },
+    "6_Donde_puedo_alquilar_equipo_de_buceo": {
+      "foreign": "¿Dónde puedo alquilar equipo de buceo?",
+      "translation": "Gdzie mogę wynająć sprzęt do nurkowania?",
+      "audio_filename": "Donde_puedo_alquilar_equipo_de_buceo.mp3",
+      "language": "es"
+    },
+    "7_Que_actividades_acuaticas_ofrecen_aqui": {
+      "foreign": "¿Qué actividades acuáticas ofrecen aquí?",
+      "translation": "Jakie aktywności wodne oferują tutaj?",
+      "audio_filename": "Que_actividades_acuaticas_ofrecen_aqui.mp3",
+      "language": "es"
+    },
+    "8_Se_permite_nadar_en_esta_playa": {
+      "foreign": "¿Se permite nadar en esta playa?",
+      "translation": "Czy można pływać na tej plaży?",
+      "audio_filename": "Se_permite_nadar_en_esta_playa.mp3",
+      "language": "es"
+    },
+    "9_Hay_un_chiringuito_por_aqui": {
+      "foreign": "¿Hay un chiringuito por aquí?",
+      "translation": "Czy jest tu w pobliżu jakaś restauracja?",
+      "audio_filename": "Hay_un_chiringuito_por_aqui.mp3",
+      "language": "es"
+    },
+    "0_En_el_hotel": {
+      "foreign": "En el hotel",
+      "translation": "W hotelu",
+      "audio_filename": "En_el_hotel.mp3",
+      "language": "es"
+    },
+    "1_Quisiera_una_habitacion_individual_doble": {
+      "foreign": "Quisiera una habitación individual/doble",
+      "translation": "Chciałbym pokój jednoosobowy/dwuosobowy",
+      "audio_filename": "Quisiera_una_habitacion_individual_doble.mp3",
+      "language": "es"
+    },
+    "2_Tienen_Wi_Fi": {
+      "foreign": "¿Tienen Wi-Fi?",
+      "translation": "Czy jest dostępne Wi-Fi?",
+      "audio_filename": "Tienen_Wi_Fi.mp3",
+      "language": "es"
+    },
+    "3_Puedo_tener_mas_toallas": {
+      "foreign": "¿Puedo tener más toallas?",
+      "translation": "Czy mogę dostać więcej ręczników?",
+      "audio_filename": "Puedo_tener_mas_toallas.mp3",
+      "language": "es"
+    },
+    "4_Donde_puedo_comprar_recuerdos": {
+      "foreign": "¿Dónde puedo comprar recuerdos?",
+      "translation": "Gdzie mogę kupić pamiątki?",
+      "audio_filename": "Donde_puedo_comprar_recuerdos.mp3",
+      "language": "es"
+    },
+    "5_Me_gustaria_reservar_una_excursion": {
+      "foreign": "Me gustaría reservar una excursión",
+      "translation": "Chciałbym zarezerwować wycieczkę",
+      "audio_filename": "Me_gustaria_reservar_una_excursion.mp3",
+      "language": "es"
+    },
+    "6_Que_actividades_hay_para_ninos": {
+      "foreign": "¿Qué actividades hay para niños?",
+      "translation": "Jakie są atrakcje dla dzieci?",
+      "audio_filename": "Que_actividades_hay_para_ninos.mp3",
+      "language": "es"
+    },
+    "7_Tienen_servicios_de_guia_turistico_en_espanol": {
+      "foreign": "¿Tienen servicios de guía turístico en español?",
+      "translation": "Czy oferują przewodników turystycznych w języku hiszpańskim?",
+      "audio_filename": "Tienen_servicios_de_guia_turistico_en_espanol.mp3",
+      "language": "es"
+    },
+    "8_Puedo_obtener_un_mapa_de_la_ciudad": {
+      "foreign": "¿Puedo obtener un mapa de la ciudad?",
+      "translation": "Czy mogę dostać mapę miasta?",
+      "audio_filename": "Puedo_obtener_un_mapa_de_la_ciudad.mp3",
+      "language": "es"
+    },
+    "9_Donde_puedo_cambiar_dinero": {
+      "foreign": "¿Dónde puedo cambiar dinero?",
+      "translation": "Gdzie mogę wymienić pieniądze?",
+      "audio_filename": "Donde_puedo_cambiar_dinero.mp3",
+      "language": "es"
+    },
+    "10_Que_documentos_necesito_para_el_registro_en_el_hot": {
+      "foreign": "¿Qué documentos necesito para el registro en el hotel?",
+      "translation": "Jakie dokumenty są potrzebne do zameldowania się w hotelu?",
+      "audio_filename": "Que_documentos_necesito_para_el_registro_en_el_hot.mp3",
+      "language": "es"
+    },
+    "11_Cual_es_la_contrasena_del_Wi_Fi": {
+      "foreign": "¿Cuál es la contraseña del Wi-Fi?",
+      "translation": "Jakie jest hasło do Wi-Fi?",
+      "audio_filename": "Cual_es_la_contrasena_del_Wi_Fi.mp3",
+      "language": "es"
+    },
+    "12_Puedo_dejar_mi_equipaje_aqui_por_unas_horas": {
+      "foreign": "¿Puedo dejar mi equipaje aquí por unas horas?",
+      "translation": "Czy mogę zostawić tu bagaż na kilka godzin?",
+      "audio_filename": "Puedo_dejar_mi_equipaje_aqui_por_unas_horas.mp3",
+      "language": "es"
+    },
+    "13_Donde_esta_la_parada_de_taxis_mas_cercana": {
+      "foreign": "¿Dónde está la parada de taxis más cercana?",
+      "translation": "Gdzie znajduje się najbliższy postój taksówek?",
+      "audio_filename": "Donde_esta_la_parada_de_taxis_mas_cercana.mp3",
+      "language": "es"
+    },
+    "14_El_aire_acondicionado_no_funciona": {
+      "foreign": "El aire acondicionado no funciona",
+      "translation": "Klimatyzacja nie działa",
+      "audio_filename": "El_aire_acondicionado_no_funciona.mp3",
+      "language": "es"
+    },
+    "15_A_que_hora_empieza_el_desayuno": {
+      "foreign": "¿A qué hora empieza el desayuno?",
+      "translation": "O której zaczyna się śniadanie?",
+      "audio_filename": "A_que_hora_empieza_el_desayuno.mp3",
+      "language": "es"
+    },
+    "16_Cuando_es_la_primera_excursion": {
+      "foreign": "¿Cuándo es la primera excursión?",
+      "translation": "Kiedy jest pierwsza wycieczka?",
+      "audio_filename": "Cuando_es_la_primera_excursion.mp3",
+      "language": "es"
+    },
+    "17_Cual_es_el_horario_de_limpieza": {
+      "foreign": "¿Cuál es el horario de limpieza?",
+      "translation": "Jakie są godziny sprzątania?",
+      "audio_filename": "Cual_es_el_horario_de_limpieza.mp3",
+      "language": "es"
+    },
+    "0_A_disfrutar": {
+      "foreign": "A disfrutar!",
+      "translation": "Bawmy się",
+      "audio_filename": "A_disfrutar.mp3",
+      "language": "es"
+    },
+    "1_Estoy_disfrutando_de_mis_vacaciones": {
+      "foreign": "Estoy disfrutando de mis vacaciones",
+      "translation": "Korzystam z wakacji",
+      "audio_filename": "Estoy_disfrutando_de_mis_vacaciones.mp3",
+      "language": "es"
+    },
+    "2_Es_muy_bonito": {
+      "foreign": "¡Es muy bonito!",
+      "translation": "To bardzo ładne!",
+      "audio_filename": "Es_muy_bonito.mp3",
+      "language": "es"
+    },
+    "3_Salud": {
+      "foreign": "¡Salud!",
+      "translation": "Na zdrowie",
+      "audio_filename": "Salud.mp3",
+      "language": "es"
+    },
+    "4_Me_encanta_la_comida_espanola": {
+      "foreign": "Me encanta la comida española",
+      "translation": "Uwielbiam hiszpańskie jedzenie",
+      "audio_filename": "Me_encanta_la_comida_espanola.mp3",
+      "language": "es"
+    },
+    "5_Es_delicioso": {
+      "foreign": "Es delicioso",
+      "translation": "Jest przepyszne",
+      "audio_filename": "Es_delicioso.mp3",
+      "language": "es"
+    },
+    "6_Que_bueno": {
+      "foreign": "¡Qué bueno!",
+      "translation": "Ale to dobre!",
+      "audio_filename": "Que_bueno.mp3",
+      "language": "es"
+    },
+    "7_Cuanta_gente": {
+      "foreign": "¡Cuánta gente!",
+      "translation": "Ile ludzi!",
+      "audio_filename": "Cuanta_gente.mp3",
+      "language": "es"
+    },
+    "8_Me_alegro": {
+      "foreign": "Me alegro",
+      "translation": "Cieszę się",
+      "audio_filename": "Me_alegro.mp3",
+      "language": "es"
+    },
+    "9_Las_mejores_vacaciones_de_mi_vida": {
+      "foreign": "Las mejores vacaciones de mi vida",
+      "translation": "Najlepsze wakacje w moim życiu",
+      "audio_filename": "Las_mejores_vacaciones_de_mi_vida.mp3",
+      "language": "es"
     }
-]
+  }
+}

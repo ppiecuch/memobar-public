@@ -182,7 +182,7 @@ audio/
 
 ### Audio Configuration (audio/config.json)
 
-The `audio/config.json` file maps Spanish text to corresponding audio files:
+The `audio/config.json` file maps text phrases to corresponding audio files for any language:
 
 ```json
 [
@@ -193,15 +193,15 @@ The `audio/config.json` file maps Spanish text to corresponding audio files:
         "timestamp": "2025-11-09T14:30:00"
     },
     {
-        "text": "Muchas gracias",
-        "file": "M/Muchas_gracias.mp3",
-        "language": "es",
+        "text": "Guten Morgen",
+        "file": "G/Guten_Morgen.mp3",
+        "language": "de",
         "timestamp": "2025-11-09T14:30:00"
     },
     {
-        "text": "Por favor",
-        "file": "P/Por_favor.mp3",
-        "language": "es",
+        "text": "Bonjour",
+        "file": "B/Bonjour.mp3",
+        "language": "fr",
         "timestamp": "2025-11-09T14:30:00"
     }
 ]
@@ -223,12 +223,29 @@ The `audio/config.json` file maps Spanish text to corresponding audio files:
 - **WAV** - Uncompressed (larger files)
 
 ### Audio File Naming Convention
+
+#### Universal Character Normalization Rules
 - Files are organized by first letter of the text (ignoring punctuation)
 - Spaces in text become underscores in filenames
-- Spanish accents and special characters are simplified
-- Examples:
-  - `"¿Cómo estás?"` → `C/Como_estas.mp3`
-  - `"¿Me traes el menú, por favor?"` → `M/Me_traes_el_menu_por_favor.mp3`
+- **All accented and special characters are simplified/removed**
+- **Universal for ALL languages** - Spanish, German, French, Polish, Italian, Portuguese, etc.
+
+#### Character Simplification Examples
+| Language | Original Character | Simplified |
+|----------|-------------------|------------|
+| Spanish | á, é, í, ó, ú | a, e, i, o, u |
+| German | ä, ö, ü, ß | a, o, u, ss |
+| French | à, è, é, ê, ç | a, e, e, e, c |
+| Polish | ą, ć, ę, ł, ń, ó, ś, ź, ż | a, c, e, l, n, o, s, z, z |
+| Portuguese | ã, õ, ç | a, o, c |
+
+#### Filename Examples by Language
+- **Spanish**: `"¿Cómo estás?"` → `C/Como_estas.mp3`
+- **German**: `"Guten Morgen"` → `G/Guten_Morgen.mp3`
+- **French**: `"Où est la gare?"` → `O/Ou_est_la_gare.mp3`
+- **Polish**: `"Dzień dobry"` → `D/Dzien_dobry.mp3`
+- **Portuguese**: `"Obrigação"` → `O/Obrigacao.mp3`
+- **Italian**: `"Buongiorno"` → `B/Buongiorno.mp3`
 
 ### Audio Integration
 - Audio files are linked to text phrases via the audio/config.json mapping
@@ -289,7 +306,7 @@ your-repo/
     4 = Gracias :: Dziękuję
 ```
 
-**audio/config.json**:
+**audio/config.json** (accented characters simplified):
 ```json
 [
     {
@@ -367,12 +384,13 @@ your-repo/
 5. **Test locally**: Validate JSON format before publishing
 
 ### Audio Files
-1. **Organized naming**: Use clear, descriptive filenames
+1. **Universal naming**: Apply character normalization rules for ANY language
 2. **Letter directories**: Organize files by first letter for easy browsing
 3. **Config mapping**: Always update audio/config.json when adding files
 4. **Text matching**: Ensure exact text match between dataset and audio config
-5. **Small file sizes**: Consider MP3 or M4A format for optimal size
-6. **Quality**: Use clear pronunciation recordings
+5. **Character simplification**: Remove ALL accents and special characters (á→a, ü→u, ç→c, etc.)
+6. **Small file sizes**: Consider MP3 or M4A format for optimal size
+7. **Quality**: Use clear pronunciation recordings
 
 ## Troubleshooting
 
