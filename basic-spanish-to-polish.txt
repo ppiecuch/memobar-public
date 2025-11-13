@@ -7,7 +7,7 @@
 	6 = ¿Cómo estás? :: Jak się masz?
 	7 = ¿Qué tal? :: Jak się masz?
 	8 = ¿Y tú? :: A ty?
-	9 = Aquí tienes (tú) :: Proszę (tu masz)
+	9 = Aquí tienes/Aquí tienes tú :: Proszę (tu masz)
 	10 = Gracias :: Dziękuję
 	11 = Muchas gracias :: Bardzo dziękuję
 	12 = Por favor :: Poproszę
@@ -114,7 +114,7 @@
 	113 = ¿Qué hace? :: Co robisz/Czym się zajmujesz?
 	114 = ¡Ni falta que hace! :: Nie rób tego!
 	115 = Tengo mucho que hacer. :: Mam dużo do zrobienia.
-	116 = ¡Gracias!/¡Gracias A ti|A usted! :: Dziękuję!
+	116 = ¡Gracias!/¡Gracias A ti!/¡Gracias A usted! :: Dziękuję!
 	117 = ¡Gracias por todo! :: Dziękuję za wszystko!
 	118 = ¡Realmente lo aprecio! :: Naprawdę to doceniam!
 	119 = No hay de qué :: Nie ma za co.
@@ -139,7 +139,7 @@
 	138 = Oh, bien, ahora está todo claro :: Oh, teraz wszystko jest jasne
 	139 = ¡Claro que sí! :: Tak, oczywiście
 	140 = Cuantas veces :: Ile razy …
-	141 = Aquí tiene (usted) :: Proszę (uprzejmie, tu masz)
+	141 = Aquí tiene/Aquí tiene usted :: Proszę (uprzejmie, tu masz)
 	142 = Más o menos :: Mniej więcej
 	143 = Sin problema :: Nie ma sprawy
 	144 = ¿Diga? :: Słucham (tel.)?

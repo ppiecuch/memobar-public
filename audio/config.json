@@ -48,10 +48,10 @@
       "audio_filename": "Y_tu.mp3",
       "language": "es"
     },
-    "9_Aqui_tienes_tu": {
-      "foreign": "Aquí tienes (tú)",
+    "9_Aqui_tienes_Aqui_tienes_tu": {
+      "foreign": "Aquí tienes/Aquí tienes tú",
       "translation": "Proszę (tu masz)",
-      "audio_filename": "Aqui_tienes_tu.mp3",
+      "audio_filename": "Aqui_tienes_Aqui_tienes_tu.mp3",
       "language": "es"
     },
     "10_Gracias": {
@@ -690,8 +690,8 @@
       "audio_filename": "Tengo_mucho_que_hacer.mp3",
       "language": "es"
     },
-    "116_Gracias_Gracias_A_ti_A_usted": {
-      "foreign": "¡Gracias!/¡Gracias A ti|A usted!",
+    "116_Gracias_Gracias_A_ti_Gracias_A_usted": {
+      "foreign": "¡Gracias!/¡Gracias A ti!/¡Gracias A usted!",
       "translation": "Dziękuję!",
       "audio_filename": "Gracias_Gracias_A_ti_Gracias_A_usted.mp3",
       "language": "es"
@@ -834,10 +834,10 @@
       "audio_filename": "Cuantas_veces.mp3",
       "language": "es"
     },
-    "141_Aqui_tiene_usted": {
-      "foreign": "Aquí tiene (usted)",
+    "141_Aqui_tiene_Aqui_tiene_usted": {
+      "foreign": "Aquí tiene/Aquí tiene usted",
       "translation": "Proszę (uprzejmie, tu masz)",
-      "audio_filename": "Aqui_tiene_usted.mp3",
+      "audio_filename": "Aqui_tiene_Aqui_tiene_usted.mp3",
       "language": "es"
     },
     "142_Mas_o_menos": {

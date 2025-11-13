@@ -19,7 +19,6 @@ Features:
 
 Text Preprocessing:
 - Removes square bracket annotations: "SER [być]" → "SER"
-- Expands pipe-separated alternatives: "algo|nada" → "algo/nada"
 - Cleans up unused MP3 files automatically
 
 Commands:
@@ -106,11 +105,10 @@ def simplify_diacritics(text: str) -> str:
 
 def preprocess_tts_text(text: str) -> str:
     """
-    Preprocess text for TTS generation by cleaning annotations and expanding alternatives.
+    Preprocess text for TTS generation by cleaning annotations.
 
     Rules:
     1. Remove square bracket annotations: "SER [być]" → "SER"
-    2. Expand pipe-separated alternatives: "¡Gracias A ti|A usted!" → "¡Gracias A ti!/¡Gracias A usted!"
 
     Args:
         text: Input text to preprocess
@@ -120,65 +118,6 @@ def preprocess_tts_text(text: str) -> str:
     """
     # Remove square bracket annotations [annotation]
     cleaned_text = re.sub(r'\s*\[[^\]]+\]', '', text)
-
-    # Handle pipe-separated alternatives
-    # Complex logic to properly replicate prefix words
-    # "¡Gracias A ti|A usted!" → "¡Gracias A ti!/¡Gracias A usted!"
-    if '|' in cleaned_text:
-        # Look for patterns that have trailing punctuation that should be repeated
-        def expand_alternatives(match):
-            full_text = match.group(0)
-
-            # Check if this ends with punctuation that should be repeated
-            trailing_punctuation = ""
-            punctuation_match = re.search(r'[!?]+$', full_text)
-            if punctuation_match:
-                trailing_punctuation = punctuation_match.group()
-                # Remove trailing punctuation for processing
-                text_without_punctuation = full_text[:-len(trailing_punctuation)]
-            else:
-                text_without_punctuation = full_text
-
-            # Split by |
-            pipe_parts = text_without_punctuation.split('|')
-            if len(pipe_parts) < 2:
-                return full_text
-
-            # Analyze the first part to find the repeating prefix
-            first_part = pipe_parts[0].strip()
-            words = first_part.split()
-
-            # Determine if we need prefix replication
-            prefix_to_repeat = ""
-
-            if len(words) >= 2:
-                # Check if first word suggests prefix replication
-                first_word = words[0]
-                if (first_word.startswith('¡') or first_word.startswith('¿') or
-                    '!' in first_word or '?' in first_word):
-                    # Spanish punctuation suggests this word should be repeated
-                    prefix_to_repeat = first_word
-
-            # Build the expanded alternatives
-            expanded_parts = []
-            for i, part in enumerate(pipe_parts):
-                part = part.strip()
-                if i == 0:
-                    # First part stays as is, add trailing punctuation
-                    expanded_parts.append(part + trailing_punctuation)
-                else:
-                    # Other parts get the prefix if needed, plus trailing punctuation
-                    if prefix_to_repeat:
-                        expanded_parts.append(f"{prefix_to_repeat} {part}{trailing_punctuation}")
-                    else:
-                        expanded_parts.append(part + trailing_punctuation)
-
-            return '/'.join(expanded_parts)
-
-        # Find pipe patterns that may need expansion
-        # This pattern looks for text with pipes, optionally ending with punctuation
-        pipe_pattern = r'[^/]*\|[^/]*[!?]*'
-        cleaned_text = re.sub(pipe_pattern, expand_alternatives, cleaned_text)
 
     # Clean up any extra whitespace
     cleaned_text = re.sub(r'\s+', ' ', cleaned_text).strip()
@@ -841,7 +780,169 @@ class TTSGenerator:
 
 def run_internal_tests() -> int:
     """Run internal tests for text preprocessing and other functionality"""
-    test_cases = [
+
+    # Test simplify_diacritics function
+    diacritics_test_cases = [
+        # Test case 1: Spanish characters
+        {
+            'input': 'niño',
+            'expected': 'nino',
+            'description': 'Spanish ñ to n'
+        },
+
+        # Test case 2: French characters
+        {
+            'input': 'café',
+            'expected': 'cafe',
+            'description': 'French é to e'
+        },
+
+        # Test case 3: German characters
+        {
+            'input': 'Müller',
+            'expected': 'Muller',
+            'description': 'German ü to u'
+        },
+
+        # Test case 4: Polish characters
+        {
+            'input': 'być',
+            'expected': 'byc',
+            'description': 'Polish ć to c'
+        },
+
+        # Test case 5: Complex mixed diacritics
+        {
+            'input': 'résumé',
+            'expected': 'resume',
+            'description': 'Mixed French accents'
+        },
+
+        # Test case 6: Special characters
+        {
+            'input': 'naïve',
+            'expected': 'naive',
+            'description': 'Diaeresis removal'
+        },
+
+        # Test case 7: Nordic characters
+        {
+            'input': 'børn',
+            'expected': 'born',
+            'description': 'Nordic ø to o'
+        },
+
+        # Test case 8: Already ASCII
+        {
+            'input': 'hello',
+            'expected': 'hello',
+            'description': 'ASCII text unchanged'
+        },
+
+        # Test case 9: Mixed case with diacritics
+        {
+            'input': 'CAFÉ',
+            'expected': 'CAFE',
+            'description': 'Uppercase diacritics'
+        },
+
+        # Test case 10: Complex Spanish text
+        {
+            'input': '¡Adiós!',
+            'expected': '¡Adios!',
+            'description': 'Spanish exclamation with accent'
+        }
+    ]
+
+    # Test sanitize_filename function
+    filename_test_cases = [
+        # Test case 1: Basic sanitization
+        {
+            'input': 'hello world',
+            'expected': 'hello_world',
+            'description': 'Spaces to underscores'
+        },
+
+        # Test case 2: Diacritics in filename
+        {
+            'input': 'café niño',
+            'expected': 'cafe_nino',
+            'description': 'Diacritics simplified and spaces replaced'
+        },
+
+        # Test case 3: Special characters
+        {
+            'input': 'hello@world!',
+            'expected': 'hello_world',
+            'description': 'Special characters removed'
+        },
+
+        # Test case 4: Multiple underscores
+        {
+            'input': 'hello   world!!!',
+            'expected': 'hello_world',
+            'description': 'Multiple spaces and punctuation'
+        },
+
+        # Test case 5: Leading/trailing spaces
+        {
+            'input': '  hello world  ',
+            'expected': 'hello_world',
+            'description': 'Leading and trailing whitespace'
+        },
+
+        # Test case 6: Long text truncation
+        {
+            'input': 'this is a very long text that should be truncated because it exceeds the maximum length',
+            'expected': 'this_is_a_very_long_text_that_should_be_truncated',
+            'description': 'Long text truncation'
+        },
+
+        # Test case 7: Only special characters
+        {
+            'input': '!!!@@@###',
+            'expected': 'audio',
+            'description': 'Only special chars fallback to default'
+        },
+
+        # Test case 8: Spanish punctuation
+        {
+            'input': '¡Buenos días!',
+            'expected': 'Buenos_dias',
+            'description': 'Spanish exclamation marks and accents'
+        },
+
+        # Test case 9: Numbers and letters
+        {
+            'input': 'word123test',
+            'expected': 'word123test',
+            'description': 'Numbers preserved with letters'
+        },
+
+        # Test case 10: Empty string
+        {
+            'input': '',
+            'expected': 'audio',
+            'description': 'Empty string fallback'
+        },
+
+        # Test case 11: Complex real-world case with slash and diacritics
+        {
+            'input': 'Aquí tienes/Aquí tienes tú',
+            'expected': 'Aqui_tienes_Aqui_tienes_tu',
+            'description': 'Real vocabulary entry with slashes and diacritics'
+        },
+
+        # Test case 12: Multiple slashes and complex punctuation
+        {
+            'input': '¿Cómo estás?/¿Qué tal?',
+            'expected': 'Como_estas_Que_tal',
+            'description': 'Multiple questions with slashes and punctuation'
+        }
+    ]
+
+    # Test text preprocessing
+    preprocessing_test_cases = [
         # Test case 1: Remove square bracket annotations
         {
             'input': 'SER [być]',
@@ -849,14 +950,7 @@ def run_internal_tests() -> int:
             'description': 'Remove square bracket annotation'
         },
 
-        # Test case 2: Handle pipe-separated alternatives with prefix replication
-        {
-            'input': '¡Gracias!/¡Gracias A ti|A usted!',
-            'expected': '¡Gracias!/¡Gracias A ti!/¡Gracias A usted!',
-            'description': 'Replicate prefix word for each alternative'
-        },
-
-        # Test case 3: Complex case from user's example
+        # Test case 2: Complex case with slashes (no processing needed)
         {
             'input': 'soy/eres/es somos/sois/son',
             'expected': 'soy/eres/es somos/sois/son',
@@ -870,11 +964,11 @@ def run_internal_tests() -> int:
             'description': 'Remove multiple annotations'
         },
 
-        # Test case 5: Mixed annotations and alternatives (simple case)
+        # Test case 5: Remove annotation with text after
         {
-            'input': 'HACER [to do] algo|nada',
-            'expected': 'HACER algo/nada',
-            'description': 'Remove annotation and simple pipe replacement'
+            'input': 'HACER [to do] something',
+            'expected': 'HACER something',
+            'description': 'Remove annotation with text after'
         },
 
         # Test case 6: No changes needed
@@ -891,21 +985,7 @@ def run_internal_tests() -> int:
             'description': 'Handle empty string'
         },
 
-        # Test case 8: Simple alternatives without prefix
-        {
-            'input': 'buenos días|tardes|noches',
-            'expected': 'buenos días/tardes/noches',
-            'description': 'Multiple simple alternatives without prefix replication'
-        },
-
-        # Test case 9: Spanish prefix replication example
-        {
-            'input': '¡Buenos días|tardes|noches!',
-            'expected': '¡Buenos días!/¡Buenos tardes!/¡Buenos noches!',
-            'description': 'Spanish greeting with prefix replication'
-        },
-
-        # Test case 10: Complex annotation removal
+        # Test case 8: Complex annotation removal
         {
             'input': 'TENER [to have] [possession] algo importante',
             'expected': 'TENER algo importante',
@@ -914,21 +994,26 @@ def run_internal_tests() -> int:
     ]
 
     print("🧪 Running Internal TTS Tests")
-    print("=" * 60)
+    print("=" * 80)
 
     all_passed = True
-    total_tests = len(test_cases)
+    total_test_count = 0
 
-    for i, test_case in enumerate(test_cases, 1):
+    # Run diacritics tests
+    print("📝 Testing simplify_diacritics() function...")
+    print("-" * 50)
+
+    for i, test_case in enumerate(diacritics_test_cases, 1):
         input_text = test_case['input']
         expected = test_case['expected']
         description = test_case['description']
 
-        result = preprocess_tts_text(input_text)
+        result = simplify_diacritics(input_text)
         passed = result == expected
+        total_test_count += 1
 
         status = "✅ PASS" if passed else "❌ FAIL"
-        print(f"Test {i:2d}/{total_tests}: {description}")
+        print(f"Diacritics {i:2d}: {description}")
         print(f"   Input:    '{input_text}'")
         print(f"   Expected: '{expected}'")
         print(f"   Got:      '{result}'")
@@ -938,12 +1023,129 @@ def run_internal_tests() -> int:
         if not passed:
             all_passed = False
 
-    print("=" * 60)
+    # Run filename sanitization tests
+    print("📁 Testing sanitize_filename() function...")
+    print("-" * 50)
+
+    for i, test_case in enumerate(filename_test_cases, 1):
+        input_text = test_case['input']
+        expected = test_case['expected']
+        description = test_case['description']
+
+        result = sanitize_filename(input_text)
+        passed = result == expected
+        total_test_count += 1
+
+        status = "✅ PASS" if passed else "❌ FAIL"
+        print(f"Filename {i:2d}: {description}")
+        print(f"   Input:    '{input_text}'")
+        print(f"   Expected: '{expected}'")
+        print(f"   Got:      '{result}'")
+        print(f"   Status:   {status}")
+        print()
+
+        if not passed:
+            all_passed = False
+
+    # Run text preprocessing tests
+    print("🔧 Testing preprocess_tts_text() function...")
+    print("-" * 50)
+
+    for i, test_case in enumerate(preprocessing_test_cases, 1):
+        input_text = test_case['input']
+        expected = test_case['expected']
+        description = test_case['description']
+
+        result = preprocess_tts_text(input_text)
+        passed = result == expected
+        total_test_count += 1
+
+        status = "✅ PASS" if passed else "❌ FAIL"
+        print(f"Preprocess {i:1d}: {description}")
+        print(f"   Input:    '{input_text}'")
+        print(f"   Expected: '{expected}'")
+        print(f"   Got:      '{result}'")
+        print(f"   Status:   {status}")
+        print()
+
+        if not passed:
+            all_passed = False
+
+    # Test cache path generation
+    print("📂 Testing cache path generation...")
+    print("-" * 50)
+
+    cache = TTSCache("test_cache")
+    cache_test_cases = [
+        {
+            'text': 'hello world',
+            'language': 'es',
+            'description': 'Basic cache path generation'
+        },
+        {
+            'text': '¡Buenos días!',
+            'language': 'es',
+            'description': 'Spanish text with diacritics'
+        },
+        {
+            'text': 'café niño',
+            'language': 'fr',
+            'description': 'Mixed diacritics'
+        },
+        {
+            'text': 'Aquí tienes/Aquí tienes tú',
+            'language': 'es',
+            'description': 'Real vocabulary entry with slashes and diacritics'
+        },
+        {
+            'text': '¿Cómo estás?/¿Qué tal?',
+            'language': 'es',
+            'description': 'Complex questions with punctuation'
+        }
+    ]
+
+    for i, test_case in enumerate(cache_test_cases, 1):
+        text = test_case['text']
+        language = test_case['language']
+        description = test_case['description']
+
+        try:
+            cache_path = cache.get_cache_path(text, language)
+            filename_only = cache.get_filename_only(text, language)
+
+            # Validate the results
+            path_valid = cache_path.suffix == '.mp3'
+            filename_valid = filename_only.endswith('.mp3')
+
+            passed = path_valid and filename_valid
+            total_test_count += 1
+
+            status = "✅ PASS" if passed else "❌ FAIL"
+            print(f"Cache {i:1d}: {description}")
+            print(f"   Input:    '{text}' ({language})")
+            print(f"   Path:     {cache_path}")
+            print(f"   Filename: {filename_only}")
+            print(f"   Status:   {status}")
+            print()
+
+            if not passed:
+                all_passed = False
+
+        except Exception as e:
+            print(f"Cache {i:1d}: {description}")
+            print(f"   Input:    '{text}' ({language})")
+            print(f"   Error:    {e}")
+            print(f"   Status:   ❌ FAIL")
+            print()
+            all_passed = False
+            total_test_count += 1
+
+    print("=" * 80)
     if all_passed:
-        print("🎉 All tests passed!")
+        print(f"🎉 All {total_test_count} tests passed!")
         return 0
     else:
-        print("💥 Some tests failed!")
+        print(f"💥 Some tests failed! ({total_test_count} total tests)")
         return 1
 
 
@@ -1072,7 +1274,7 @@ Examples:
     # Check if config file exists
     if not os.path.exists(args.config):
         print(f"❌ Error: Config file '{args.config}' not found")
-        print(f"💡 Create a config.json file with dataset information")
+        print(f"💡 Create a '{args.config}' file with dataset information")
         return 1
 
     try:
