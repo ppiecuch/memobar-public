@@ -67,6 +67,7 @@ import urllib.request
 import hashlib
 import re
 import unicodedata
+from datetime import datetime
 from pathlib import Path
 from typing import List, Dict, Optional, Tuple
 
@@ -632,26 +633,28 @@ class TTSGenerator:
     def save_audio_mappings(self, datasets_with_entries: List[Tuple[Dict, List]], config_file: str):
         """Save audio filename mappings to a config file"""
 
-        # Create audio mapping structure
+        # Create audio mapping structure (array format)
         audio_mappings = {}
+        current_timestamp = datetime.now().strftime("%d-%m-%YT%H:%M:%S")
 
         for dataset_config, entries in datasets_with_entries:
             dataset_file = dataset_config.get('file', 'unknown')
-            dataset_mappings = {}
+            dataset_entries = []
 
             for entry in entries:
                 if entry.audio_filename:
-                    # Create a key that uniquely identifies this entry
-                    entry_key = f"{entry.id}_{sanitize_filename(entry.foreign)}"
-                    dataset_mappings[entry_key] = {
+                    # Create entry in array format with timestamp
+                    entry_data = {
                         'foreign': entry.foreign,
                         'translation': entry.translation,
                         'audio_filename': entry.audio_filename,
-                        'language': entry.language_in
+                        'language': entry.language_in,
+                        'last_update': current_timestamp
                     }
+                    dataset_entries.append(entry_data)
 
-            if dataset_mappings:
-                audio_mappings[dataset_file] = dataset_mappings
+            if dataset_entries:
+                audio_mappings[dataset_file] = dataset_entries
 
         if not audio_mappings:
             print("⚠️ No audio mappings to save")
@@ -667,18 +670,17 @@ class TTSGenerator:
             print(f"🚨 DRY RUN - Would save audio mappings to: {audio_config_file}")
             print(f"   Total datasets with audio: {len(audio_mappings)}")
 
-            total_entries = sum(len(mappings) for mappings in audio_mappings.values())
+            total_entries = sum(len(entries) for entries in audio_mappings.values())
             print(f"   Total entries with audio: {total_entries}")
 
             # Show a sample of what would be saved
             print(f"\n📋 Sample audio mapping structure:")
             sample_config = {}
-            for dataset_file, mappings in list(audio_mappings.items())[:1]:  # Show first dataset
-                sample_entries = {}
-                for key, value in list(mappings.items())[:3]:  # Show first 3 entries
-                    sample_entries[key] = value
-                if len(mappings) > 3:
-                    sample_entries[f"... and {len(mappings) - 3} more entries"] = "..."
+            for dataset_file, entries in list(audio_mappings.items())[:1]:  # Show first dataset
+                sample_entries = entries[:3]  # Show first 3 entries
+                if len(entries) > 3:
+                    # Add placeholder entry to show more exist
+                    sample_entries.append(f"... and {len(entries) - 3} more entries")
                 sample_config[dataset_file] = sample_entries
 
             print(json.dumps(sample_config, indent=2, ensure_ascii=False))
@@ -693,7 +695,7 @@ class TTSGenerator:
             print(f"   Total datasets with audio: {len(audio_mappings)}")
 
             # Show summary
-            total_entries = sum(len(mappings) for mappings in audio_mappings.values())
+            total_entries = sum(len(entries) for entries in audio_mappings.values())
             print(f"   Total entries with audio: {total_entries}")
 
         except Exception as e:
